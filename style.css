@@ -28,3 +28,12 @@ nav{grid-column:1/-1;grid-row:2}
 .projects article{grid-template-columns:1fr}
 .lead{margin-top:1.5rem}
 }
+.gigs section+section{margin-top:3.5rem}
+.gigs h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1.25rem}
+.gigs ul{list-style:none;margin:0;padding:0;max-width:48rem}
+.gigs li{display:grid;grid-template-columns:8rem 1fr;gap:.25rem 1.5rem;margin-bottom:.9rem}
+@media(max-width:600px){.gigs li{grid-template-columns:1fr}}
+.contact a{display:inline}
+.contact .links{display:flex;gap:1rem;justify-content:flex-end;margin-top:.15rem;font-size:.85rem}
+.contact .links a{color:var(--grey);text-decoration:none}
+.contact .links a:hover{color:var(--accent)}
