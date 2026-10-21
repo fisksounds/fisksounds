@@ -1,4 +1,4 @@
-:root{--bg:#fff;--ink:#000;--grey:#6b6b6b;--accent:#2a2aff}
+:root{--bg:#FCFFFC;--ink:#040F0F;--grey:#2D3A3A;--accent:#248232}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.6 ui-sans-serif,system-ui,"Helvetica Neue",Arial,sans-serif}
@@ -10,15 +10,15 @@ header{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap
 .brand{font-size:1.5rem;font-weight:700;letter-spacing:-.03em;text-decoration:none}
 nav{display:flex;gap:1.25rem;font-size:.95rem}
 nav a{text-decoration:none;color:var(--grey)}
-nav a:hover,nav a[aria-current="page"]{color:var(--ink)}
+nav a:hover,nav a[aria-current="page"]{color:var(--accent)}
 nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.3em}
 .contact{font-size:.95rem;text-align:right}
-.lead{font-size:clamp(2.2rem,7vw,4.75rem);line-height:1.05;font-weight:600;letter-spacing:-.035em;max-width:14em;margin:3rem 0 0}
+.lead{font-size:clamp(2.2rem,7vw,4.75rem);line-height:1.05;font-weight:600;letter-spacing:-.035em;max-width:14em;margin:3rem 0 0;color:var(--accent)}
 .text{max-width:38rem}
-.text h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1rem}
+.text h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1rem;color:var(--accent)}
 .text section+section{margin-top:3.5rem}
 .text p{margin:0 0 1.1rem}
-.projects article{display:grid;grid-template-columns:8rem 1fr;gap:.5rem 1.5rem;margin-bottom:2.5rem;max-width:48rem}
+.projects article{display:grid;grid-template-columns:8rem minmax(0,1fr) 13rem;gap:.5rem 1.5rem;margin-bottom:2.5rem}
 .projects h2{font-size:1.15rem;line-height:1.3;margin:0 0 .35rem;letter-spacing:-.01em}
 .projects p{margin:0 0 .6rem;max-width:36rem}
 .when{color:var(--grey);font-size:.95rem;padding-top:.15rem}
@@ -29,7 +29,7 @@ nav{grid-column:1/-1;grid-row:2}
 .lead{margin-top:1.5rem}
 }
 .gigs section+section{margin-top:3.5rem}
-.gigs h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1.25rem}
+.gigs h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1.25rem;color:var(--accent)}
 .gigs ul{list-style:none;margin:0;padding:0;max-width:48rem}
 .gigs li{display:grid;grid-template-columns:8rem 1fr;gap:.25rem 1.5rem;margin-bottom:.9rem}
 @media(max-width:600px){.gigs li{grid-template-columns:1fr}}
@@ -37,3 +37,17 @@ nav{grid-column:1/-1;grid-row:2}
 .contact .links{display:flex;gap:1rem;justify-content:flex-end;margin-top:.15rem;font-size:.85rem}
 .contact .links a{color:var(--grey);text-decoration:none}
 .contact .links a:hover{color:var(--accent)}
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;align-content:start}
+.pics a{display:block}
+.pics a:last-of-type:nth-of-type(odd){grid-column:1/-1}
+.pics img{display:block;width:100%;height:auto}
+.pics .credit{grid-column:1/-1;margin:0;font-size:.8rem;color:var(--grey)}
+@media(max-width:600px){.pics{max-width:20rem;margin-top:.5rem}}
+.mixes{display:flex;gap:1.25rem;margin:0 0 1.25rem}
+
+.gigs section{display:grid;grid-template-columns:minmax(0,1fr) 13rem;column-gap:2rem;align-items:start}
+.gigs section>h2,.gigs section>.mixes{grid-column:1/-1}
+.gigs .pics{display:flex;flex-direction:column;gap:1rem}
+.gigs figure{margin:0}
+.gigs figcaption{margin-top:.3rem;font-size:.8rem;line-height:1.35;color:var(--grey)}
+@media(max-width:600px){.gigs section{grid-template-columns:1fr}.gigs .pics{max-width:20rem;margin-top:1.5rem}}
