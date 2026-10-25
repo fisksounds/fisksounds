@@ -1,4 +1,5 @@
-:root{--bg:#FCFFFC;--ink:#040F0F;--grey:#2D3A3A;--accent:#248232}
+@font-face{font-family:"Abril Fatface";src:url("abril-fatface.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+:root{--bg:#FCFFFC;--ink:#040F0F;--grey:#2D3A3A;--accent:#248232;--display:"Abril Fatface",Georgia,"Times New Roman",serif}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.6 ui-sans-serif,system-ui,"Helvetica Neue",Arial,sans-serif}
@@ -7,15 +8,15 @@ a:hover,a:focus-visible{color:var(--accent)}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .wrap{max-width:62rem;margin:0 auto;padding:1.5rem 1.5rem 5rem}
 header{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:1rem 2.5rem;padding-bottom:4rem}
-.brand{font-size:1.5rem;font-weight:700;letter-spacing:-.03em;text-decoration:none}
-nav{display:flex;gap:1.25rem;font-size:.95rem}
+.brand{font-family:var(--display);font-size:2.6rem;font-weight:400;line-height:1;letter-spacing:0;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.6rem;font-family:var(--display);font-size:1.5rem;font-weight:400;line-height:1.2}
 nav a{text-decoration:none;color:var(--grey)}
 nav a:hover,nav a[aria-current="page"]{color:var(--accent)}
 nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.3em}
 .contact{font-size:.95rem;text-align:right}
-.lead{font-size:clamp(2.2rem,7vw,4.75rem);line-height:1.05;font-weight:600;letter-spacing:-.035em;max-width:14em;margin:3rem 0 0;color:var(--accent)}
+.lead{font-family:var(--display);font-size:clamp(2.8rem,9vw,6.25rem);line-height:1.05;font-weight:400;letter-spacing:-.01em;max-width:14em;margin:3rem 0 0;color:var(--accent)}
 .text{max-width:38rem}
-.text h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1rem;color:var(--accent)}
+.text h2{font-family:var(--display);font-size:2.5rem;font-weight:400;line-height:1.1;letter-spacing:0;margin:0 0 1rem;color:var(--accent)}
 .text section+section{margin-top:3.5rem}
 .text p{margin:0 0 1.1rem}
 .projects article{display:grid;grid-template-columns:8rem minmax(0,1fr) 13rem;gap:.5rem 1.5rem;margin-bottom:2.5rem}
@@ -24,12 +25,12 @@ nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.3em}
 .when{color:var(--grey);font-size:.95rem;padding-top:.15rem}
 @media(max-width:600px){
 header{grid-template-columns:1fr auto;padding-bottom:2.5rem}
-nav{grid-column:1/-1;grid-row:2}
+nav{grid-column:1/-1;grid-row:2;font-size:1.3rem}
 .projects article{grid-template-columns:1fr}
 .lead{margin-top:1.5rem}
 }
 .gigs section+section{margin-top:3.5rem}
-.gigs h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 1.25rem;color:var(--accent)}
+.gigs h2{font-family:var(--display);font-size:2.5rem;font-weight:400;line-height:1.1;letter-spacing:0;margin:0 0 1.25rem;color:var(--accent)}
 .gigs ul{list-style:none;margin:0;padding:0;max-width:48rem}
 .gigs li{display:grid;grid-template-columns:8rem 1fr;gap:.25rem 1.5rem;margin-bottom:.9rem}
 @media(max-width:600px){.gigs li{grid-template-columns:1fr}}
