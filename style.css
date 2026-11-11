@@ -52,3 +52,8 @@ nav{grid-column:1/-1;grid-row:2;font-size:1.3rem}
 .gigs figure{margin:0}
 .gigs figcaption{margin-top:.3rem;font-size:.8rem;line-height:1.35;color:var(--grey)}
 @media(max-width:600px){.gigs section{grid-template-columns:1fr}.gigs .pics{max-width:20rem;margin-top:1.5rem}}
+.text .secondary h2{font-size:1.8rem}
+.text .secondary p{font-size:.95rem}
+.portrait{margin:1.75rem 0 0;max-width:20rem}
+.portrait img{display:block;width:100%;height:auto}
+.portrait figcaption{margin-top:.3rem;font-size:.8rem;color:var(--grey)}
