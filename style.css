@@ -60,3 +60,11 @@ nav{grid-column:1/-1;grid-row:2;font-size:1.3rem}
 .pics figure{margin:0}
 .pics figure.wide{grid-column:1/-1}
 .pics figcaption{margin-top:.3rem;font-size:.8rem;line-height:1.35;color:var(--grey)}
+
+.site-footer{display:flex;gap:1.25rem;margin-top:4rem;font-size:.85rem}
+.site-footer a{color:var(--grey)}
+.site-footer a:hover{color:var(--accent)}
+.legal h2{font-size:1.9rem}
+.legal h3{margin:1.6rem 0 .4rem;font-size:1.05rem}
+.legal p,.legal address{font-size:.95rem;font-style:normal;margin:0 0 .9rem}
+.legal section+section{margin-top:4rem;padding-top:2rem;border-top:1px solid var(--grey)}
