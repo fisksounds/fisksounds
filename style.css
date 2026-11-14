@@ -57,3 +57,6 @@ nav{grid-column:1/-1;grid-row:2;font-size:1.3rem}
 .portrait{margin:1.75rem 0 0;max-width:20rem}
 .portrait img{display:block;width:100%;height:auto}
 .portrait figcaption{margin-top:.3rem;font-size:.8rem;color:var(--grey)}
+.pics figure{margin:0}
+.pics figure.wide{grid-column:1/-1}
+.pics figcaption{margin-top:.3rem;font-size:.8rem;line-height:1.35;color:var(--grey)}
