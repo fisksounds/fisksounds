@@ -69,3 +69,4 @@ nav{grid-column:1/-1;grid-row:2;font-size:1.3rem}
 .legal p,.legal address{font-size:.95rem;font-style:normal;margin:0 0 .9rem}
 .legal section+section{margin-top:4rem;padding-top:2rem;border-top:1px solid var(--grey)}
 .available{margin:2rem 0 0;max-width:34rem;font-size:1.15rem;line-height:1.45;color:var(--ink)}
+.pics.stack{grid-template-columns:minmax(0,10rem)}
