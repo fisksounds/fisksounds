@@ -70,4 +70,4 @@ nav{grid-column:1/-1;grid-row:2;font-size:1.3rem}
 .legal section+section{margin-top:4rem;padding-top:2rem;border-top:1px solid var(--grey)}
 .available{margin:2rem 0 0;max-width:34rem;font-size:1.15rem;line-height:1.45;color:var(--ink)}
 .pics.stack{grid-template-columns:minmax(0,10rem)}
-.home-logo{display:block;width:min(24rem,85%);height:auto;margin:4rem auto 0}
+.home-logo{display:block;width:min(24rem,85%);height:auto;margin-left:auto;margin-right:auto;margin-top:clamp(5rem,16vh,11rem)}
